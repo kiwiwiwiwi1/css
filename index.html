@@ -1,25 +1,80 @@
 <!DOCTYPE html>
-<html>
+<html lang="th">
 <head>
-  <style>
-    .box {
-      color: white;                 /* ตัวอักษรสีขาว */
-      background-color: #4CAF50;    /* พื้นหลังสีเขียว */
-      border: 3px solid #2e7d32;    /* เส้นขอบสีเขียวเข้ม */
-      padding: 15px;
-      width: 320px;
-      font-family: Arial, sans-serif;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>CSS Colors</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;   /* สีพื้นหลังหน้าเว็บ */
+        }
+
+        /* หัวข้อ */
+        h1 {
+            color: #333333;
+        }
+
+        /* การ์ดเนื้อหา */
+        .card {
+            width: 420px;
+            background-color: #ffffff;  /* สีพื้นหลัง */
+            color: #000000;             /* สีตัวอักษร */
+            padding: 20px;
+            margin: 20px 0;
+            border-left: 6px solid #3399ff; /* สีขอบ */
+        }
+
+        /* กล่องแจ้งเตือน */
+        .success {
+            background-color: #e6ffe6;
+            color: #006600;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+
+        .warning {
+            background-color: #fff3cd;
+            color: #856404;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+
+        /* ปุ่ม */
+        .btn {
+            display: inline-block;
+            background-color: #3399ff;
+            color: #ffffff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+
+        .btn:hover {
+            background-color: #0066cc; /* เปลี่ยนสีเมื่อเอาเมาส์ชี้ */
+        }
+    </style>
 </head>
 <body>
 
-  <div class="box">
-    ตัวอย่างการใช้ CSS Color <br>
-    - ตัวอักษรสีขาว <br>
-    - พื้นหลังสีเขียว <br>
-    - เส้นขอบสีเขียวเข้ม
-  </div>
+    <h1>CSS Colors</h1>
+
+    <div class="success">
+        ✔ การบันทึกข้อมูลสำเร็จ
+    </div>
+
+    <div class="warning">
+        ⚠ กรุณากรอกข้อมูลให้ครบถ้วน
+    </div>
+
+    <div class="card">
+        <h2>บทความแนะนำ</h2>
+        <p>
+            CSS Colors ใช้กำหนดสีให้กับข้อความ พื้นหลัง ขอบ 
+            และองค์ประกอบต่าง ๆ บนหน้าเว็บ
+        </p>
+        <a href="#" class="btn">อ่านเพิ่มเติม</a>
+    </div>
 
 </body>
 </html>
